@@ -36,6 +36,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use('/auth', authentication);
+
+app.use(passportConfig.ensureAuthenticated);
 app.use('/', routes);
 app.use('/users', users);
 
