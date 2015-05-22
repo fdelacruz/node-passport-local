@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  form(action="/auth/", method="post")
+    input(type="text", name="username", placeholder="Username")
+    input(type="text", name="password", placeholder="Password")
+    input(type="submit")
